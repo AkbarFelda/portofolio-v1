@@ -1,26 +1,72 @@
-@import "tailwindcss";
+@import "tailwindcss";  
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gradient-primary: linear-gradient(
+    to right,#1A1726 4%,#2A214A 47%,#262237 70%,#1A1726 97%);
+  
+  ;
+  
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: GabaritoRegular;
+  src: url(/font/Gabarito-Regular.ttf) format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
+@font-face {
+  font-family: GabaritoMedium;
+  src: url(/font/Gabarito-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: GabaritoBold;
+  src: url(/font/Gabarito-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: GabaritoSemiBold;
+  src: url(/font/Gabarito-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: GabaritoExtraBold;
+  src: url(/font/Gabarito-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: GabaritoBlack;
+  src: url(/font/Gabarito-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: TagesschriftReguler;
+  src: url(/font/Tagesschrift-Reguler.ttf) format("truetype");
+}
+
+@theme {
+  --color-gray:#868490;
+--color-yellow:#F8E7A1;
+--color-blue: #101B2E;
+  --font-gabaritoreguler: GabaritoRegular;
+  --font-gabaritomedium: GabaritoMedium;
+  --font-gabaritobold: GabaritoBold;
+  --font-gabaritosemibold: GabaritoSemiBold;
+  --fontgabaritoextrabold: GabaritoExtraBold;
+  --font-gabaritoblack: GabaritoBlack;
+  --font-tagesschriftreguler: TagesschriftReguler;
+  --font-family: GabaritoRegular, GabaritoMedium, GabaritoSemiBold, GabaritoExtraBold, GabaritoBlack, GabaritoBold, TagesschriftReguler, sans-serif;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  background: var(--gradient-primary);
+  font-family: GabaritoRegular, GabaritoMedium, GabaritoSemiBold, GabaritoExtraBold, GabaritoBlack, GabaritoBold, TagesschriftReguler, sans-serif;
+} 
