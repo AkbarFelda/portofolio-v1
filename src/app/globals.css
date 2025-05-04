@@ -1,13 +1,15 @@
-@import "tailwindcss";  
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --gradient-primary: linear-gradient(
-    to right,#1A1726 4%,#2A214A 47%,#262237 70%,#1A1726 97%);
-  
-  ;
-  
+    to right,
+    #1a1726 4%,
+    #2a214a 47%,
+    #262237 70%,
+    #1a1726 97%
+  );
 }
 
 @font-face {
@@ -45,10 +47,7 @@
   src: url(/font/Tagesschrift-Reguler.ttf) format("truetype");
 }
 
-@theme {
-  --color-gray:#868490;
---color-yellow:#F8E7A1;
---color-blue: #101B2E;
+@theme inline  {
   --font-gabaritoreguler: GabaritoRegular;
   --font-gabaritomedium: GabaritoMedium;
   --font-gabaritobold: GabaritoBold;
@@ -56,7 +55,10 @@
   --fontgabaritoextrabold: GabaritoExtraBold;
   --font-gabaritoblack: GabaritoBlack;
   --font-tagesschriftreguler: TagesschriftReguler;
-  --font-family: GabaritoRegular, GabaritoMedium, GabaritoSemiBold, GabaritoExtraBold, GabaritoBlack, GabaritoBold, TagesschriftReguler, sans-serif;
+  --font-family: GabaritoRegular, GabaritoMedium, GabaritoSemiBold,
+    GabaritoExtraBold, GabaritoBlack, GabaritoBold, TagesschriftReguler,
+    sans-serif;
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -68,5 +70,19 @@
 
 body {
   background: var(--gradient-primary);
-  font-family: GabaritoRegular, GabaritoMedium, GabaritoSemiBold, GabaritoExtraBold, GabaritoBlack, GabaritoBold, TagesschriftReguler, sans-serif;
-} 
+  font-family: GabaritoRegular, GabaritoMedium, GabaritoSemiBold,
+    GabaritoExtraBold, GabaritoBlack, GabaritoBold, TagesschriftReguler,
+    sans-serif;
+  overflow-x: hidden;
+}
+ 
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
