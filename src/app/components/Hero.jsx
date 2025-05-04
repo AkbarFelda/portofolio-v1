@@ -26,11 +26,13 @@ const Hero = () => {
         </a>
       </div>
       <div className='content-center flex flex-col items-center z-10'>
-        <Image 
-          src="assets/images/photo-ghibli.png"
+      <Image 
+          src="/assets/images/photo-ghibli.png" 
           alt="photo"
-          className="rounded-lg w-72 h-102 -translate-x-20 object-cover"
-        />
+          width={288}  
+          height={408}
+          className="rounded-lg object-cover -translate-x-20"
+      />
         <p className='-translate-x-20 -translate-y-0.3 font-tagesschriftreguler'>
           <span className="text-white">Just call me </span>
           <span className="text-blue-500 ">Akbar</span>
