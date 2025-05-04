@@ -2,6 +2,7 @@ import React from 'react'
 import { FiArrowRight } from 'react-icons/fi'
 import { Spotlight } from './ui/Spotlight';
 import { Boxes } from './ui/Background-box';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -20,12 +21,12 @@ const Hero = () => {
           Experienced in building responsive user interfaces using Flutter and React. Skilled in managing state with GetX. Focused on clean code, UI/UX principles, and effective team collaboration to create efficient and engaging applications.
         </p>
         <a href="#contact" className="text-amber-200 flex items-center space-x-2 z-10">
-          <span>Let's talk</span>
+          <span>Let&apos;s talk</span>
           <FiArrowRight className="text-amber-200" />
         </a>
       </div>
       <div className='content-center flex flex-col items-center z-10'>
-        <img
+        <Image 
           src="assets/images/photo-ghibli.png"
           alt="photo"
           className="rounded-lg w-72 h-102 -translate-x-20 object-cover"
