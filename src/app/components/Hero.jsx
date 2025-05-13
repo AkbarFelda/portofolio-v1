@@ -8,16 +8,13 @@ const Hero = () => {
     <div className="relative min-h-screen grid grid-cols-1 md:grid-cols-3 gap-10 items-center justify-center py-20 px-10">
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md-top-20 h-screen"
-          fill="white"
+          className="-top-40 -left-10 md:-left-32 md-top-20 h-screen" fill="white"
         />
         <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
-          fill="purple"
+          className="top-10 left-full h-[80vh] w-[50vw]" fill="purple"
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-
       <div className="flex flex-col items-center md:items-start">
         <h1 className="text-5xl font-gabaritobold text-gray-500 whitespace-nowrap text-center md:text-left mt-4 md:mb-8 z-10">
           Frontend Developer
@@ -42,8 +39,8 @@ const Hero = () => {
       </div>
       <div className="flex flex-col justify-center items-center mb-20 z-10 space-y-4">
         <FlipImageCard
-          image1="/assets/images/photo-ghibli.png"
-          image2="/assets/images/photo-ghibli.png"
+          image1="/assets/images/photo-kosong.png"
+          image2="/assets/images/photo-profil1.png"
           alt1="First Image"
           alt2="Second Image"
         />
@@ -52,7 +49,6 @@ const Hero = () => {
           <span className="text-purple-500">Akbar</span>
         </p>
       </div>
-
       <div className="flex flex-col items-center md:items-end text-white z-10 gap-[70px]">
         <div className="text-2xl font-gabaritosemibold text-gray-500 flex flex-col text-center md:text-end">
           <span>Years of</span>
