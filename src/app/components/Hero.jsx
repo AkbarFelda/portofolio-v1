@@ -1,8 +1,7 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { Spotlight } from "./ui/Spotlight";
-import { Boxes } from "./ui/Background-box";
-import Image from "next/image";
+import FlipImageCard from "./ui/FlipImageCard";
 
 const Hero = () => {
   return (
@@ -41,16 +40,14 @@ const Hero = () => {
           <FiArrowRight className="text-amber-200" />
         </a>
       </div>
-
-      <div className="flex flex-col justify-center items-center z-10">
-        <Image
-          src="/assets/images/photo-ghibli.png"
-          alt="photo"
-          width={288}
-          height={408}
-          className="rounded-lg object-cover"
+      <div className="flex flex-col justify-center items-center mb-20 z-10 space-y-4">
+        <FlipImageCard
+          image1="/assets/images/photo-ghibli.png"
+          image2="/assets/images/photo-ghibli.png"
+          alt1="First Image"
+          alt2="Second Image"
         />
-        <p className="mt-4 font-light text-white">
+        <p className="font-light text-white z-10 translate-y-30">
           <span className="text-white">Just call me </span>
           <span className="text-purple-500">Akbar</span>
         </p>
