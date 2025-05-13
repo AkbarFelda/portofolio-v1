@@ -44,12 +44,12 @@ const Hero = () => {
           alt1="First Image"
           alt2="Second Image"
         />
-        <p className="font-light text-white z-10 translate-y-30">
+        <p className="font-light text-white z-10 translate-y-30 md:translate-y-28">
           <span className="text-white">Just call me </span>
           <span className="text-purple-500">Akbar</span>
         </p>
       </div>
-      <div className="flex flex-col items-center md:items-end text-white z-10 gap-[70px]">
+      <div className="flex flex-col items-center md:items-end text-white z-10 gap-[70px] mt-10">
         <div className="text-2xl font-gabaritosemibold text-gray-500 flex flex-col text-center md:text-end">
           <span>Years of</span>
           <span>Experience</span>

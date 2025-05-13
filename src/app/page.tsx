@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "./components/Hero";
 import { FaHome, FaUserAlt, FaCodeBranch, FaEnvelope, FaCertificate } from "react-icons/fa";
 import { FloatingNav } from "./components/ui/Navbar";
+import SocialIcons from "./components/SocialLinks";
+
 export default function Home() {
   return (
     <main className="relative justify-center items-center flex flex-col">
@@ -16,6 +18,7 @@ export default function Home() {
           ]}
         />
         <Hero />
+        <SocialIcons/>
       </div>
     </main>
   )
