@@ -10,6 +10,7 @@
     #262237 70%,
     #1a1726 97%
   );
+  --bg-marquee:  rgba(9, 20, 39, 0.6);
 }
 
 @font-face {
@@ -47,7 +48,7 @@
   src: url(/font/Tagesschrift-Reguler.ttf) format("truetype");
 }
 
-@theme inline  {
+:root {
   --font-gabaritoreguler: GabaritoRegular;
   --font-gabaritomedium: GabaritoMedium;
   --font-gabaritobold: GabaritoBold;
@@ -68,12 +69,20 @@
   }
 } */
 
+.svg-filter {
+  filter: invert(1) brightness(100%) contrast(100%);
+}
+
 body {
   background: var(--gradient-primary);
   font-family: GabaritoRegular, GabaritoMedium, GabaritoSemiBold,
     GabaritoExtraBold, GabaritoBlack, GabaritoBold, TagesschriftReguler,
     sans-serif;
   overflow-x: hidden;
+}
+
+.bg-marquee {
+  background-color: var(--bg-marquee);
 }
  
 @keyframes spotlight {
