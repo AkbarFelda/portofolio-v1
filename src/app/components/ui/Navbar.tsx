@@ -19,15 +19,11 @@ export const FloatingNav = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      setVisible(false); // Hide while scrolling
-
-      // Clear previous timeout if still running
+      setVisible(false);
       clearTimeout(scrollTimeout);
-
-      // Set timeout to re-show navbar after user stops scrolling
       scrollTimeout = setTimeout(() => {
-        setVisible(true); // Show when scroll stops
-      }, 150); // Adjust delay as needed
+        setVisible(true);
+      }, 150); 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -55,8 +51,8 @@ export const FloatingNav = ({
             href={navItem.link}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500",
-              "md:hover:border-b-2 md:hover:border-white", // Apply border on hover for larger screens (md and above)
-              "hover:border-transparent" // On mobile, no border by default
+              "md:hover:border-b-2 md:hover:border-white",
+              "hover:border-transparent" 
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
