@@ -11,7 +11,6 @@ const MarqueeSocial = () => {
       direction="left"
       autoFill={true}
     >
-      {/* Behance Logo dengan link */}
       <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer">
         <Image
           src="/assets/icons/Behance Logotype.svg"
@@ -21,8 +20,6 @@ const MarqueeSocial = () => {
           className="svg-filter"
         />
       </a>
-
-      {/* Dribbble Logo dengan link */}
       <a href="https://www.dribbble.com" target="_blank" rel="noopener noreferrer">
         <Image
           src="/assets/icons/Dribbble Logotype.svg"
@@ -32,8 +29,6 @@ const MarqueeSocial = () => {
           className="svg-filter"
         />
       </a>
-
-      {/* GitHub Logo dengan link */}
       <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
         <Image
           src="/assets/icons/GitHub Logotype.svg"
@@ -43,8 +38,6 @@ const MarqueeSocial = () => {
           className="svg-filter"
         />
       </a>
-
-      {/* LinkedIn Logo dengan link */}
       <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
         <Image
           src="/assets/icons/LinkedInLogotype.svg"
@@ -53,8 +46,6 @@ const MarqueeSocial = () => {
           height={109}
         />
       </a>
-
-      {/* Instagram Logo dengan link */}
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
         <Image
           src="/assets/icons/Instagram Logotype.svg"
