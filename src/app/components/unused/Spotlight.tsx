@@ -55,3 +55,9 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
     </svg>
   );
 };
+
+{/* <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
+  <Spotlight className="top-10 left-10 md:left-32 md:top-20 h-screen" fill="white" />
+  <Spotlight className="top-10 left-1/2 h-[80vh] w-[50vw]" fill="purple" />
+  <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+</div> */}
