@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import { FaHome, FaUserAlt, FaCodeBranch, FaEnvelope, FaCertificate } from "react-icons/fa";
 import { FloatingNav } from "./components/ui/Navbar";
 import MarqueeSocial from "./components/MarqueeSocial";
+import Grid from "./components/ui/Grid";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         </div>
         <Hero />
         <MarqueeSocial />
+        <div className="my-12"></div>
+        <Grid/>
       </div>
     </main>
   );
