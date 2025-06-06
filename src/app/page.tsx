@@ -13,7 +13,7 @@ export default function Home() {
           <FloatingNav
             navItems={[
               { name: 'Home', link: '/', icon: <FaHome /> },
-              { name: 'About', link: '/about', icon: <FaUserAlt /> },
+              { name: 'About', link: '#about', icon: <FaUserAlt /> },
               { name: 'Projects', link: '/projects', icon: <FaCodeBranch /> },
               { name: 'Certificate', link: '/certif', icon: <FaCertificate /> },
               { name: 'Experience', link: '/contact', icon: <FaEnvelope /> },
