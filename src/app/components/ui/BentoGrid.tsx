@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+import { IoCopyOutline, IoLogoInstagram } from "react-icons/io5";
 import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "../unused/GradientBento";
@@ -50,6 +50,7 @@ export const BentoGridItem = ({
   const rightLists = ["Kotlin", "NextJS", "Laravel"];
 
   const [copied, setCopied] = useState(false);
+  const [click, clicked] = useState(false);
 
   const defaultOptions = {
     loop: copied,
@@ -58,6 +59,12 @@ export const BentoGridItem = ({
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
+  };
+
+  const handleInstagram = () => {
+    const url = "https://www.instagram.com/muhammadakbarfelda/";
+    window.open(url, "_blank");
+    clicked(true);
   };
 
   const handleCopy = () => {
@@ -117,7 +124,7 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3  lg:-right-2">
+            <div className="flex gap-1 lg:gap-2 w-fit absolute right-0 top-1/2 -translate-y-1/2 -translate-x-3">
               <div className="flex flex-col gap-1 md:gap-1 lg:gap-4">
                 {leftLists.map((item, i) => (
                   <span
@@ -147,18 +154,22 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}
-              >
-                <Lottie options={defaultOptions} height={200} width={400} />
+              <div className="flex flex-row gap-2 lg:gap-4 items-center justify-center">
+                <MagicButton
+                  title="Instagram"
+                  icon={<IoLogoInstagram />}
+                  position="left"
+                  handleClick={handleInstagram}
+                  otherClasses="!bg-[#161A31]"
+                />
+                <MagicButton
+                  title={copied ? "Email Copied!" : "Copy Email"}
+                  icon={<IoCopyOutline />}
+                  position="left"
+                  handleClick={handleCopy}
+                  otherClasses="!bg-[#161A31]"
+                />
               </div>
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
             </div>
           )}
         </div>

@@ -6,9 +6,20 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen grid grid-cols-1 md:grid-cols-3 gap-10 items-center justify-center py-20 px-10">
       <div className="flex flex-col items-center md:items-start space-y-3">
-        <h1 className="text-5xl font-gabaritobold text-gray-500 text-nowrap text-center md:text-left z-10">
+        <div className="w-full marquee-wrapper block md:hidden">
+          <div className="marquee-inner">
+            <span className="text-5xl font-gabaritobold text-gray-500 marquee-text">
+              Frontend Developer &nbsp;
+            </span>
+            <span className="text-5xl font-gabaritobold text-gray-500 marquee-text">
+              Frontend Developer &nbsp;
+            </span>
+          </div>
+        </div>
+        <h1 className="hidden md:block text-5xl font-gabaritobold text-gray-500 text-center md:text-left text-nowrap">
           Frontend Developer
         </h1>
+
         <h1 className="text-5xl font-gabaritosemibold text-amber-50 max-w-xs text-center md:text-left z-10">
           Muhammad Akbar Felda
         </h1>
