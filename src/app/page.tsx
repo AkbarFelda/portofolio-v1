@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import { FaHome, FaUserAlt, FaCodeBranch, FaEnvelope, FaCertificate } from "react-icons/fa";
 import { FloatingNav } from "./components/ui/Navbar";
 import MarqueeSocial from "./components/MarqueeSocial";
-import Grid from "./components/ui/Grid";
+import Grid from "./components/Grid";
 
 export default function Home() {
   return (

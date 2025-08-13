@@ -13,8 +13,9 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/assets/images/b1.svg",
-    spareImg: "",
+    img: "/assets/images/grid.svg", ///assets/images/b1.svg
+    spareImg: "/assets/images/astronout.png",
+    spareImgClassName: "hidden sm:block w-16 h-16 md:w-60 md:h-80 object-cover object-center",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ export const gridItems = [
     titleClassName: "justify-start items-center text-center",
     img: "",
     spareImg: "",
+    spareImgClassName: "",
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
+    spareImgClassName: "",
   },
   {
     id: 4,
@@ -45,17 +48,19 @@ export const gridItems = [
     titleClassName: "justify-start",
     img: "/assets/images/grid.svg",
     spareImg: "/assets/images/b4.svg",
+    spareImgClassName: "object-cover object-center w-full h-full",
   },
 
   {
     id: 5,
-    title: "Currently building a business for creating websites and apps!",
+    title: "Currently study at Binus University in Computer Science",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/assets/images/b5.svg",
     spareImg: "/assets/images/grid.svg",
+    spareImgClassName: "object-cover object-center w-full h-full",
   },
   {
     id: 6,
@@ -65,7 +70,8 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center items-center",
     img: "",
-    spareImg: "",
+    spareImg: "/assets/images/grid.svg",
+    spareImgClassName: "object-cover object-center w-20",
   },
 ];
 
