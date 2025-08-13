@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { IoCopyOutline, IoLogoInstagram } from "react-icons/io5";
+import { IoCopyOutline, IoLogoInstagram, IoSend } from "react-icons/io5";
 import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "../unused/GradientBento";
@@ -36,6 +36,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  spareImgClassName
 }: {
   className?: string;
   id: number;
@@ -45,6 +46,7 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  spareImgClassName?: string;
 }) => {
   const leftLists = ["ReactJS", "Flutter", "Typescript"];
   const rightLists = ["Kotlin", "NextJS", "Laravel"];
@@ -62,7 +64,7 @@ export const BentoGridItem = ({
   };
 
   const handleInstagram = () => {
-    const url = "https://www.instagram.com/muhammadakbarfelda/";
+    const url = "https://www.instagram.com/studdycheese/";
     window.open(url, "_blank");
     clicked(true);
   };
@@ -102,7 +104,7 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              className="object-cover object-center w-full h-full"
+              className={cn(spareImgClassName, "object-cover object-center w-full h-full")}
             />
           )}
         </div>
@@ -153,18 +155,18 @@ export const BentoGridItem = ({
           )}
 
           {id === 6 && (
-            <div className="mt-5 relative">
+            <div className="mt-4 relative">
               <div className="flex flex-row gap-2 lg:gap-4 items-center justify-center">
-                <MagicButton
+                {/* <MagicButton
                   title="Instagram"
                   icon={<IoLogoInstagram />}
                   position="left"
                   handleClick={handleInstagram}
                   otherClasses="!bg-[#161A31]"
-                />
+                /> */}
                 <MagicButton
-                  title={copied ? "Email Copied!" : "Copy Email"}
-                  icon={<IoCopyOutline />}
+                  title={copied ? "Email Sent!" : "Send Email"}
+                  icon={<IoSend />}
                   position="left"
                   handleClick={handleCopy}
                   otherClasses="!bg-[#161A31]"
