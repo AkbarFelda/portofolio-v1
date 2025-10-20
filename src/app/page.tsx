@@ -1,9 +1,11 @@
 import React from "react";
 import Hero from "./components/Hero";
-import { FaHome, FaUserAlt, FaCodeBranch, FaEnvelope, FaCertificate } from "react-icons/fa";
+import { FaHome, FaUserAlt, FaCodeBranch, FaEnvelope, FaCertificate, FaUniversity, FaBriefcase } from "react-icons/fa";
 import { FloatingNav } from "./components/ui/Navbar";
 import MarqueeSocial from "./components/MarqueeSocial";
 import Grid from "./components/Grid";
+import Projects from "./components/Projects";
+import RecentProject from "./components/RecentProject";
 
 export default function Home() {
   return (
@@ -12,18 +14,21 @@ export default function Home() {
         <div className="fixed top-0 left-0 right-0 z-50 max-w-7xl sm:left-[15px]">
           <FloatingNav
             navItems={[
-              { name: 'Home', link: '/', icon: <FaHome /> },
-              { name: 'About', link: '#about', icon: <FaUserAlt /> },
-              { name: 'Projects', link: '/projects', icon: <FaCodeBranch /> },
-              { name: 'Certificate', link: '/certif', icon: <FaCertificate /> },
-              { name: 'Experience', link: '/contact', icon: <FaEnvelope /> },
+            { name: 'Home', link: '#home', icon: <FaHome /> },
+            // { name: 'About', link: '#about', icon: <FaUserAlt /> },
+            { name: 'Projects', link: '#projects', icon: <FaCodeBranch /> },
+            // { name: 'Education', link: '#education', icon: <FaUniversity /> },
+            { name: 'Experience', link: '#experience', icon: <FaBriefcase /> }, 
+            { name: 'Contact', link: '#contact', icon: <FaEnvelope /> },
             ]}
           />
         </div>
-        <Hero />
+        <Hero /> 
         <MarqueeSocial />
-        <div className="my-12"></div>
+        {/* <div className="my-12"></div> */}
         <Grid/>
+        <Projects/>
+        <RecentProject/>
       </div>
     </main>
   );
