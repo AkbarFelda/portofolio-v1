@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
-import { projects } from '../data';
+import { projects } from "../data";
 import { PinContainer } from "./ui/3d-pin";
 
 const RecentProjects = () => {
@@ -9,9 +10,7 @@ const RecentProjects = () => {
     <div className="py-20">
       <h1 className="text-5xl text-white text-center">
         A small selection of <br />
-        <span className="text-purple-100">
-          my recent projects
-        </span>
+        <span className="text-purple-100">my recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -19,21 +18,27 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title={item.link}
-              href={item.link}
-            >
+            <PinContainer title={item.link} href={item.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="assets/images/bg.png" alt="bgimg" />
+                  <Image
+                    src="/assets/images/bg.png"
+                    alt="background"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
-                <img
+
+                <Image
                   src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  alt={item.title}
+                  width={400}
+                  height={300}
+                  className="z-10 absolute bottom-0 object-contain"
                 />
               </div>
 
@@ -61,13 +66,19 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image
+                        src={icon}
+                        alt={`icon-${index}`}
+                        width={30}
+                        height={30}
+                        className="p-2 object-contain"
+                      />
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-white">
                     Check Live Site
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />

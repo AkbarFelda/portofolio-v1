@@ -81,7 +81,7 @@ export const projects = [
     title: "3D Solar System Planets to Explore",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "assets/images/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["assets/images/re.svg", "assets/images/tail.svg", "assets/images/ts.svg", "assets/images/three.svg", "assets/images/fm.svg"],
     link: "/ui.earth.com",
   },
   {
@@ -89,7 +89,7 @@ export const projects = [
     title: "Yoom - Video Conferencing App",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "assets/images/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["assets/images/next.svg", "assets/images/tail.svg", "assets/images/ts.svg", "assets/images/stream.svg", "assets/images/c.svg"],
     link: "/ui.yoom.com",
   },
   {
@@ -97,17 +97,17 @@ export const projects = [
     title: "AI Image SaaS - Canva Application",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
     img: "assets/images/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["assets/images/re.svg", "assets/images/tail.svg", "assets/images/ts.svg", "assets/images/three.svg", "assets/images/c.svg"],
     link: "/ui.aiimg.com",
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "assets/images/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+  // {
+  //   id: 4,
+  //   title: "Animated Apple Iphone 3D Website",
+  //   des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+  //   img: "assets/images/p4.svg",
+  //   iconLists: ["assets/images/next.svg", "assets/images/tail.svg", "assets/images/ts.svg", "assets/images/three.svg", "assets/images/gsap.svg"],
+  //   link: "/ui.apple.com",
+  // },
 ];
 
 export const testimonials = [
