@@ -1,24 +1,16 @@
 # Portofolio Akbarfelda
-
 Portofolio pribadi yang modern dan interaktif, dibuat menggunakan **Next.js** dan menampilkan kemampuan di bidang pengembangan web, termasuk elemen 3D interaktif. Tujuannya adalah untuk menunjukkan proyek, pengalaman kerja, dan informasi kontak dalam antarmuka yang menarik.
 
 ## Fitur Utama
-
 Berdasarkan data proyek (`src/app/data/index.ts`), portofolio ini mencakup:
 
   * **Navigasi Cepat:** Tautan ke bagian Tentang, Proyek, Testimonial, dan Kontak.
   * **Informasi Diri:** Menampilkan poin-poin utama seperti penekanan pada komunikasi yang kuat dengan klien, fleksibilitas zona waktu, dan studi di Binus University.
-  * **Proyek Unggulan:** Empat proyek utama yang disorot, termasuk:
-      * Simulasi 3D Planet Tata Surya (menggunakan Three.js).
-      * Aplikasi Konferensi Video (Yoom).
-      * Aplikasi SaaS AI Image dengan sistem pembayaran/kredit.
-      * Website iPhone 3D Animasi (menggunakan GSAP dan Three.js).
-  * **Pengalaman Kerja:** Bagian yang memuat riwayat pekerjaan, seperti peran *Frontend Engineer Intern* dan *Lead Frontend Developer*.
-  * **Integrasi Pihak Ketiga:** Menampilkan ikon perusahaan/layanan seperti Cloudinary, Appwrite, HOSTINGER, Stream, dan Docker.
+  * **Proyek Unggulan:** 3 proyek utama yang disorot, berdasarkan proyek terbaru
+  * **Pengalaman Kerja:** Bagian yang memuat riwayat pekerjaan, seperti peran *Frontend Engineer Intern* 
   * **Testimonial:** Bagian untuk menampilkan ulasan/rekomendasi.
 
 ## Tumpukan Teknologi
-
 Proyek ini dibangun menggunakan teknologi modern, seperti yang tercantum dalam `package.json`:
 
 | Kategori | Teknologi Utama | Versi | Sumber |
@@ -30,66 +22,11 @@ Proyek ini dibangun menggunakan teknologi modern, seperti yang tercantum dalam `
 | **Motion** | motion | 12.23.24 | |
 | **Komponen UI** | lucide-react, react-icons | - | |
 
-## Instalasi dan Penggunaan
-
-Ikuti langkah-langkah di bawah ini untuk menyiapkan dan menjalankan proyek di lingkungan lokal Anda.
-
-### Prasyarat
-
+## Penggunaan
 Pastikan Anda telah menginstal:
 
   * Node.js (versi terbaru direkomendasikan)
   * npm (atau yarn/pnpm)
 
-### Langkah-langkah Instalasi
-
-1.  **Clone repositori**
-
-    ```bash
-    git clone [LINK_REPOSITORI_ANDA]
-    cd akbarfelda
-    ```
-
-2.  **Instal dependensi**
-    Gunakan npm:
-
-    ```bash
-    npm install
-    # atau menggunakan yarn:
-    # yarn install
-    ```
-
-3.  **Jalankan proyek dalam mode pengembangan**
-    Proyek Next.js ini dikonfigurasi untuk menggunakan Turbopack untuk pengembangan yang lebih cepat.
-
-    ```bash
-    npm run dev
-    # atau:
-    # yarn dev
-    ```
-
-    Aplikasi akan tersedia di `http://localhost:3000`.
-
-4.  **Buat (Build) untuk produksi**
-
-    ```bash
-    npm run build
-    # atau:
-    # yarn build
-    ```
-
-5.  **Jalankan hasil build produksi (opsional)**
-
-    ```bash
-    npm start
-    # atau:
-    # yarn start
-    ```
-
 ## Kontak
-
 Jika Anda tertarik untuk memulai proyek bersama, silakan hubungi melalui media sosial yang tersedia di situs web:
-
-  * GitHub: `/git.svg`
-  * Twitter: `/twit.svg`
-  * LinkedIn: `/link.svg`
